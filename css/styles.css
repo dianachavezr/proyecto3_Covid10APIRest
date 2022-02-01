@@ -54,7 +54,7 @@ body {
   display: grid;
   grid-template:
 
-    "navbar"  2fr
+    "navbar"  fr
     "sectionUno" 2fr
     "sectionCarrusel"2fr
     "main"    7fr
@@ -69,4 +69,5 @@ body {
     "sectionCarrusel"2fr
     "main"    7fr
     "footer"  2fr;
+}
 }
