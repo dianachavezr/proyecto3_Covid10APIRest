@@ -65,8 +65,8 @@ body {
   .grid-container {
     grid-template:
     "navbar"  2fr
-    "sectionUno" 2fr
     "sectionCarrusel"2fr
+    "sectionUno" 2fr    
     "main"    7fr
     "footer"  2fr;
 }
