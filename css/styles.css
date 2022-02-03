@@ -24,19 +24,19 @@ body{
   max-width: 1290px;
   margin: 20px auto;
   display: grid;
-  grid-template-areas:    "nav nav nav nav"
-                          "ppal ppal butcel"
-                          "basic basic basic basic"
-                          "cards cards cards cards"
-                          "stay stay stay stay"
-                          "faq faq faq faq"
-                          "uni uni uni uni"
-                          "get get get get"
-                          "post post post post"
-                          "about about about about"
-                          "footer footer footer footer";
+  grid-template-areas:    "nav"
+                          "ppal"
+                          "basic"
+                          "cards"
+                          "stay"
+                          "faq"
+                          "uni"
+                          "get"
+                          "post"
+                          "about"
+                          "footer";
 }
-
+/*Primera Area*/
 #nav {
   background-color: white;
   display:flex;
@@ -44,43 +44,36 @@ body{
   position: fixed;
   z-index: 20;
   width: 100%;
-  height: 50px;
+  height: 3rem;
   max-width: 1290px;
   font-size: 1rem;
   color: #1d109e;
 }
-header h1{
-  align-items: center;
-  justify-content: center;
-  
-}
-#nav{
-  background-color:white;
-  width: 100%;
+.menu{
+  padding-left: 8rem;
+  width: 90%;
   display: flex;
-  justify-content:space-around;
-  position: absolute;
-  height: 50px;
+  justify-content:space-between;
+  height: 3rem;
   align-items:center;
-  
 }
-#corov{
-  width: 30px; 
-  position: absolute;
-  top: 10%;
-  left: 10%;
+.menu ul{
+  display: flex; 
+  align-items: center;   
 }
-
+.menu li{
+    margin-right: 1.5rem;
+}
+.menu button{
+    color: white;
+    background-color: #3639ae;
+    border-radius: 6px;
+    border: solid;
+    border-color: #3639ae;
+}
 a, li{
   font-family: poppins;
   color: #9898d6;
-}
-.menu ul{
-display: flex; 
-align-items: center;   
-}
-.menu li{
-  margin-right: 1.5rem;
 }
 nav li:hover{
   background-color: white;
@@ -88,30 +81,22 @@ nav li:hover{
 nav li:hover a{
   color: rgb(59 72 241);
 }
-.menu button{
-  color: white;
-  background-color: #3639ae;
-  border-radius: 6px;
-  }
 
+/*Segunda Area*/
 .ppal{
+  position: relative;
   grid-area: ppal;
   display: flex;
   width: 100%;
-  height: 600px;
-  grid-area: ppal;
-  text-align:left;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  position: relative;
+  height: 35rem;
   background: linear-gradient(0deg, #171133, #3691b6);
 }  
-
 #texto{
-  width: 80%;
-  height: 400px;
-  padding-top: 3%;
+  width: 50%;
+  padding-top: 7rem;
+  padding-left: 8rem;
+  margin-top: 1rem;
+  position: absolute;  
 }
 .ppal h1{
   font-size: 3rem;
@@ -119,31 +104,26 @@ nav li:hover a{
 .ppal button{
   color: white;
   background-color: #121158;
-  width: 200px;
-  height: 50px;
-  padding-top: 3px;
-  border-radius: 25px;
-  position: relative;
-  top: 15px;
-  left: -10px;
+  width: 12rem;
+  height: 3rem;
+  padding-top: .4rem;
+  border-radius: 2rem;
   border: solid;
   border-color: #121158;
+  margin-top: 1rem;
   font-weight: 800;
 }
-.ppal #butcel{
-position: relative;
-left: 700px;
-top: -430px;
-width: 400px;
-grid-area: butcel;
+#celu{
+  position: absolute;
+  top: 4rem;
+  left: 47rem;
+  height: 27rem;
 }
-
+/*Tercera Area*/ 
 .basic{
   grid-area: basic;
   width: 100%;
-  height: 600px;
-  text-align: center;
-  justify-content: center;
+  height: 35rem;
 }
 #brands{
   background-color: white;
@@ -157,40 +137,137 @@ grid-area: butcel;
   }
 #text2{
     padding-top: 150px;
+    text-align: center;
+    justify-content: center;
 }
 #text2 h1{
   font-size: 3rem;
 }
 
+/*Cuarta Area*/
 .cards{
   grid-area: cards;
   width: 100%;
-  height: 600px;
-  text-align: center;
-  justify-content: center;
+  height: 35rem;
+  position: relative;
 }
 
+.container-slider {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider{
+  display: flex;
+  width: 200%;
+  height: 300px;
+  margin-left: -100%;
+}
+
+.slider__section{
+  /*display: block;*/
+  margin-left: 40px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  width: 100%;  
+  height: 90%;
+  border-radius: 10px;
+  background-color: whitesmoke;  
+  color: rgb(165, 165, 192);
+  /*box-shadow: 0 0 0,
+              0px 50px 0px;*/
+}
+.slider__section h2{
+  color: #3C3B75;
+  margin-top: 1rem;
+}
+.slider__section p{
+  margin-top: 1rem;
+  font-size: 11.5px;
+}
+#icon1{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color: #35BFE7;
+  border-radius: 5%;
+}
+
+#icon2{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color: #FA4C9A;
+}
+#icon3{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color:#ECBF24;
+}
+#icon4{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color: tomato;
+}
+#icon5{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color: #35BFE7;
+  }
+#icon6{
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  background-color:#ECBF24;
+  }
+
+
+
+.slider__btn{
+  position: absolute;
+  color: red;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(165, 165, 192, 0.7);
+  top: 85%;
+  transform: translateX(50%);
+  text-align: center; 
+  border-radius: 50%;
+}
+.slider__btn:hover{
+  background-color: #fff;
+}
+.slider__btn--left{
+left: 100px;
+}
+.slider__btn--rigth{
+right: 100px;
+}
+
+/*QuintaArea*/
 .stay{
   grid-area: faq;
   width: 100%;
-  height: 600px;
+  height: 35rem;
   position: relative;
 }
 #cel{
   position: absolute;
   left: 3rem;
 } 
-
 #text3{
   position: absolute;
   left: 40rem;
   top: 1rem;
-  
 }
 #text3 h1{
   font-size: 3rem;
 }
-
 #butstay button{
   background-color: #3639AE;
   color: white;
@@ -203,11 +280,11 @@ grid-area: butcel;
   margin-top: 2rem;
  }
  
-
+ /*sexta area*/
 .faq{
   grid-area: faq;
   width: 100%;
-  height: 400px;
+  height: 35rem;
   text-align: center;
   justify-content: center;
   position: relative;
@@ -226,10 +303,11 @@ grid-area: butcel;
 #text4 h1{
   font-size: 3rem;
 }
+/*Septima Area*/
 .uni{
   grid-area: uni;
   width: 100%;
-  height: 600px;
+  height: 35rem;
   position: relative;
 }
 .uni #text5{
@@ -239,31 +317,35 @@ grid-area: butcel;
   padding-right: 3rem;
   background-color: #1B2A4E;
 }
+
+/*Octava Area*/
 .get{
   grid-area: get;
   width: 100%;
-  height: 600px;
+  height: 35rem;
   position: relative;
 }
 #texto6{
-  position: absolute;
-  margin-left: 5rem;
-  padding-left: 6rem;
-  width: 80%;
+  display: flex;
+  /*position: absolute;*/
+  width: 85%;
   border-radius: 0.5rem;
   background: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
+  margin-left: 5rem;
+}
+#texto6a{
   padding-bottom: 8rem;
   padding-top: 5rem;
-
+  padding-left: 6rem;
 }
-#texto6 h1{
+#texto6a h1{
   font-size: 3rem;
 }
 #but4{
   background-color: white;
   color: black;
-  width: 200px;
-  height: 60px;
+  width: 14rem;
+  height: 4rem;
   border-radius: .6rem;
   border: solid;
   border-color: white;
@@ -275,13 +357,14 @@ grid-area: butcel;
   top: -4rem;
   left: 55rem;
 }
+
+/*Novena area*/
 .post{
   grid-area: post;
   width: 100%;
-  height: 600px;
+  height: 35rem;
   position: relative;
 }
-
 #post1{
   display: flex;
   width: 80%;
@@ -299,7 +382,6 @@ grid-area: butcel;
   color: white;
   padding-left: 5rem;
 }
-
 .cont2 a{
   text-decoration: underline;
   color: white;
@@ -310,8 +392,6 @@ grid-area: butcel;
   color: white;
   padding-left: 7rem;
 }
-
-
 #post2{
   display: flex;
   width: 80%;
@@ -325,10 +405,11 @@ grid-area: butcel;
   padding-top: 4rem;
 } 
 
+/*Decima Area*/
 .about{
   grid-area: about;
   width: 100%;
-  height: 300px;
+  height: 18rem;
   background-color: #1B2A4E;
   position: relative;
 }
@@ -343,7 +424,6 @@ color: #38436D;
 #redes{
   padding-top: 0.5rem;
 }
-
 .ti-twitter, .ti-linkedin, .ti-youtube{
   padding-left: 1rem;
   color: white;
@@ -354,12 +434,12 @@ color: #38436D;
 #last h4{
   color: white;
 }
+/*Area once*/
 footer{
   grid-area: footer;
   width: 100%;
-  height: 50px;
+  height: 2rem;
   background-color: #1B2A4E;
-  position: relative;
   color: whitesmoke;
   font-size: xx-small;
   text-align: center;
