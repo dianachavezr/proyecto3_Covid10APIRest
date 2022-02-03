@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+
+}
+
+.grid-container > * {
+  
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headermain4{
+  box-sizing: border-box;
+  color: #3639AE;
+  position: absolute;
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: 600;
+  
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 33px 43px;
+
+}
+
+
+
+
+
+/*BEGIN NABVAR STYLES**************************************************/
+#navbarPrincipal {
+  width: 100%;
+  grid-area: navbar;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#imgCorona{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#imageCorona{  
+  width: 50px;
+}
+
+
+
+
+/*ANIMATION CORONA ICON********************/
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+  #imageCorona{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.navbar a{  
+  width: 3.7rem;
+  padding: 1rem 1.2rem;
+  display: block;
+  margin:  10% auto;
+  text-decoration: none;  
+  border-radius: 25%;  
+}
+
+.navbar a:hover{
+  color: #ffffff;
+  background-color: #3639AE;
+}
+
+.active, .navbar a:hover{
+  background-color: #3639AE;
+  color: white;
+}
+
+#puntos{
+  position: absolute;
+  top: 1000px;
+  color:#3639AE;  
+}
+/*END NABVAR STYLES**************************************************/
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fdcfcf;
+}
+
+.main4 {
+ 
+  position: relative;
+  width: auto;
+  grid-area: main4;
+  background-color: #f51313;
+  width: 100%;
+  display: block;
+  
+}
+/*STYLE TABLE********************/
+#div2{
+
+  overflow: scroll;
+  height: 800px;
+  width: 920px;
+  margin: 10% auto;
+  text-align: center;
+  background-color: rgb(166, 255, 0);
+}
+/*END STYLE TABLE ********************/
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "navbar sidebar"  2fr
+    "navbar main4" 	 2fr/
+	 50px	5fr
+
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template:
+      "navbar sidebar main4"   10fr /
+     80px    2fr   7.5fr;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template:
+      "navbar sidebar main4"   10fr /
+     0.7fr    4fr   7fr;
+  }
+
+  }
+
+  @media (min-width: 1366px) {
+    
+    #puntos{
+         top: 620px;
+      }
+    }
+
+
