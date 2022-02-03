@@ -33,7 +33,8 @@ body{
                           "uni uni uni uni"
                           "get get get get"
                           "post post post post"
-                          "about about about";
+                          "about about about about"
+                          "footer footer footer footer";
 }
 
 #nav {
@@ -249,6 +250,7 @@ grid-area: butcel;
   margin-left: 5rem;
   padding-left: 6rem;
   width: 80%;
+  border-radius: 0.5rem;
   background: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
   padding-bottom: 8rem;
   padding-top: 5rem;
@@ -268,16 +270,98 @@ grid-area: butcel;
   font-weight: 600;
   margin-top: 2rem;
 }
-
+#cel3{
+  position: absolute;
+  top: -4rem;
+  left: 55rem;
+}
 .post{
   grid-area: post;
   width: 100%;
   height: 600px;
+  position: relative;
 }
+
+#post1{
+  display: flex;
+  width: 80%;
+  padding-left: 12rem;
+} 
+#img1{
+  width: 9rem;
+}
+#texto7{
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+.cont a{
+  text-decoration: underline;
+  color: white;
+  padding-left: 5rem;
+}
+
+.cont2 a{
+  text-decoration: underline;
+  color: white;
+  padding-left: 6rem;
+}
+.cont3 a{
+  text-decoration: underline;
+  color: white;
+  padding-left: 7rem;
+}
+
+
+#post2{
+  display: flex;
+  width: 80%;
+  padding-left: 12rem;
+  padding-top: 4rem;
+} 
+#post3{
+  display: flex;
+  width: 80%;
+  padding-left: 12rem;
+  padding-top: 4rem;
+} 
 
 .about{
   grid-area: about;
   width: 100%;
   height: 300px;
   background-color: #1B2A4E;
+  position: relative;
+}
+#last{
+display: flex;
+width: 80%;
+justify-content: space-between;
+padding-left: 7rem;
+padding-top: 2rem;
+color: #38436D;
+}
+#redes{
+  padding-top: 0.5rem;
+}
+
+.ti-twitter, .ti-linkedin, .ti-youtube{
+  padding-left: 1rem;
+  color: white;
+}
+.ti-facebook{
+  color: white;
+}
+#last h4{
+  color: white;
+}
+footer{
+  grid-area: footer;
+  width: 100%;
+  height: 50px;
+  background-color: #1B2A4E;
+  position: relative;
+  color: whitesmoke;
+  font-size: xx-small;
+  text-align: center;
+  justify-content:center ;
 }
