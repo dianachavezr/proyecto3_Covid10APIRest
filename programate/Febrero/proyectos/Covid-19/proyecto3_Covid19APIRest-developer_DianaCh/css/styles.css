@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #afd6af;
+}
+
+.sectionUno {
+  grid-area: sectionUno;
+  background-color: red;
+}
+
+.sectionCarrusel {
+  grid-area: sectionCarrusel;
+  background-color: green;
+}
+
+
+.main {
+  grid-area: main;
+  background-color: red;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8c96a0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+
+    "navbar"  fr
+    "sectionUno" 2fr
+    "sectionCarrusel"2fr
+    "main"    7fr
+    "footer"  2fr;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template:
+    "navbar"  2fr
+    "sectionCarrusel"2fr
+    "sectionUno" 2fr    
+    "main"    7fr
+    "footer"  2fr;
+}
+}
