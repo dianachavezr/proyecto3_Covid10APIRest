@@ -7,6 +7,8 @@ fetch(url)
 
 const mostrarData = (data) => {
     console.log(data)
+    //getFormulario(data)
+
     //TEMPLATE STRING PARA TRAER LOS DATOS
     let body = ''
 
@@ -28,4 +30,6 @@ const mostrarData = (data) => {
     
     document.getElementById('data').innerHTML = body
 }
+
+
 
