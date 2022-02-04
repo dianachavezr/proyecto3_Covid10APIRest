@@ -25,20 +25,26 @@ body {
   align-items: center;
 }
 
+
+
 .headermain4{
   box-sizing: border-box;
   color: #3639AE;
-  position: absolute;
-  text-align: left;
+  position: relative;
   margin-bottom: 0;
   font-weight: 600;
+  background-color: yellow;
   
   font-size: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 33px 43px;
+  padding: 40px;
 
 }
 
+.headermain4 h1{
+  position: absolute;
+  top: 44px;
+  }
 
 
 
@@ -104,14 +110,143 @@ body {
   color:#3639AE;  
 }
 /*END NABVAR STYLES**************************************************/
-
-.sidebar {
-  grid-area: sidebar;
-  background-color: #fdcfcf;
+/*BEGIN SIDE BAR*****************************************************/  
+.sidebar4 {
+  grid-area: sidebar4;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 10px;
+  height: auto;
+  width: 285px;
+  overflow: scroll;
+  scrollbar-color: #eeeeee #ffffff;
+  display: block;
+  border-right: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
+
+.sidebar4 h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0c0c0d;
+}
+
+.sidebar4 div{  
+  margin: 10px;
+  width: 15rem;
+  height: 6rem;
+  padding:5%;
+  border-radius: 3%;
+}
+.sidebar4 h3{
+  color: #1a1662;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#One, #Two, #Three, #Four{
+  position: relative;
+  padding: 1rem;  
+}
+
+#One button, #Three button, #Four button{
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background-color:#ffffff;
+  border:none;
+  padding: 0.2rem;
+}
+#One p, #Two p, #Three p, #Four p, #Five p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#One:hover, #Two:hover, #Three:hover, #Four:hover,#Five1:hover, #Five2:hover,
+#Five3:hover, #Five4:hover, #Five5:hover,#Five6:hover, #Five7:hover, #Five8:hover,
+#Five9:hover, #Five10:hover {
+ -webkit-transform:scale(1.04);
+-moz-transform:scale(1.04);
+-ms-transform:scale(1.04);
+-o-transform:scale(1.04);
+transform:scale(1.04);
+-webkit-transition:all 0.5s ease; /* Safari y Chrome */
+-moz-transition:all 0.5s ease; /* Firefox */
+-o-transition:all 0.5s ease; /* IE 9 */
+-ms-transition:all 0.5s ease; /* Opera */
+border-radius: 3%;
+}
+
+#One{ 
+  background-color: #fff2f2;
+}
+
+#One p{
+  color: #ff0000;
+}
+
+#One:hover{
+  border:2px solid #ff0000;
+}
+
+#Two{
+  background-color: #fff9f1;
+}
+
+#Two p{
+  color: #ff6a07;
+}
+#Two:hover{
+ border:2px solid #ff6a07;
+ }
+
+#Three{
+  background-color: #edffec;
+}
+
+#Three p{
+  color: #82c519;
+}
+
+#Three:hover{
+ border:2px solid#82c519;
+ }
+
+#Four{
+  background-color: #eefbff;
+}
+
+#Four p{
+  color: #3639AE;
+}
+
+#Four:hover{
+ border:2px solid#3639AE;
+   }
+
+#Five{
+  min-height: 150px;
+  padding: 20px 10px 0 0px; 
+}
+
+#Five h3{
+  padding-left: 20px;
+}
+
+#Five div{
+  padding-left: 10%;
+  margin: 10px 0;
+  height: 3rem;
+  border: 1px solid #eeeeee;
+  background-color: green;
+  border-radius: 3%;
+  
+  
+}
+
+/*END SIDE BAR*****************************************************/  
+
 .main4 {
- 
   position: relative;
   width: auto;
   grid-area: main4;
@@ -120,31 +255,36 @@ body {
   display: block;
   
 }
+
+
 /*STYLE TABLE********************/
-#div2{
+#div4{
 
   overflow: scroll;
-  height: 800px;
-  width: 920px;
-  margin: 10% auto;
-  text-align: center;
+  height: 600px;
+  width: 180px;
+  margin: auto;
+  text-align: left;
   background-color: rgb(166, 255, 0);
+  
 }
 /*END STYLE TABLE ********************/
 
 .grid-container {
   display: grid;
   grid-template:
-    "navbar sidebar"  2fr
+    "navbar sidebar4"  1fr
     "navbar main4" 	 2fr/
 	 50px	5fr
 
 }
 
+
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template:
-      "navbar sidebar main4"   10fr /
+      "navbar sidebar4 main4"   10fr /
      80px    2fr   7.5fr;
   }
 
@@ -153,11 +293,52 @@ body {
 @media (min-width: 1024px) {
   .grid-container {
     grid-template:
-      "navbar sidebar main4"   10fr /
+      "navbar sidebar4 main4"   10fr /
      0.7fr    4fr   7fr;
   }
 
   }
+
+  @media (min-width: 1280px) {
+    .grid-container {
+      grid-template:
+      "navbar sidebar4 main4"   10fr /
+       0.1fr    2.5fr   8.5fr;
+    }
+  
+    #div1{
+      overflow: scroll;
+      height: 800px;
+      width: 1000px;
+      margin: 25px;
+      text-align: left;
+    }
+  
+  
+    .main4 {
+  
+      position: relative;
+      grid-area: main4;
+      background-color: #f51313;
+      width: 100%;
+      display: block;
+      
+    }
+    .sidebar4 {
+      grid-area: sidebar4;
+      display: block;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px 10px;
+      height: auto;
+      width: 320px;
+      overflow: scroll;
+      scrollbar-color: #eeeeee #ffffff;
+      display: block;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+   
+    }
 
   @media (min-width: 1366px) {
     
