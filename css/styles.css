@@ -18,29 +18,44 @@ body{
   color: white;
 }
 
-.container {
+body .container {
   background-color: #171133;
   width: 100%;
   max-width: 1290px;
-  margin: 20px auto;
+  margin: 0px auto;
   display: grid;
-  grid-template-areas:    "nav"
-                          "ppal"
-                          "basic"
-                          "cards"
-                          "stay"
-                          "faq"
-                          "uni"
-                          "get"
-                          "post"
-                          "about"
-                          "footer";
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;/*tampoco*/
+  grid-template-areas:    "nav nav nav nav nav nav"
+                          "ppal1 ppal1 ppal1 ppal1 ppal1 ppal1"
+                          "ppal ppal ppal celu celu celu"
+                          "basic basic basic basic basic basic"
+                          "b2 b3 b4 b5 b6 b7"
+                          "text2 text2 text2 text2 text2 text2"
+                          "cards1 cards1 cards1 cards1 cards1 cards1"
+                          "cards cards cards cards cards cards"
+                          "stay stay stay stay stay stay"
+                          "cel cel cel cel text3 text3 text3"
+                          "faq faq faq faq faq faq"
+                          "f1 f2 . . f3 f4" 
+                          "text4 text4 text4 text4 text4 text4"
+                          "uni uni uni uni uni uni"
+                          "text5 text5 text5 text5 text5 text5"
+                          "get get get get get get"
+                          "text6a text6a text6a cel3 cel3 cel3"
+                          "post post post post post post post "
+                          "post1 post1 post1 post1 post1 post1"
+                          "post2 post2 post2 post2 post2 post2"
+                          "post3 post3 post3 post3 post3 post3"
+                          "about about about about about about "
+                          "img5 img5 it1 it2 it3 it4"
+                          "footer footer footer footer footer footer";
 }
 /*Primera Area*/
 #nav {
   background-color: white;
   display:flex;
   grid-area: nav;
+  /*grid-column: span 1fr 1fr 1fr 1fr 1fr 1fr;*/
   position: fixed;
   z-index: 20;
   width: 100%;
@@ -56,6 +71,16 @@ body{
   justify-content:space-between;
   height: 3rem;
   align-items:center;
+}
+.bmenu{
+  margin-right: 30px;
+  font-size: 25px;
+  color: #171133;
+  cursor: pointer;
+  display: none;
+}
+ul.show{
+  top: 65px;
 }
 .menu ul{
   display: flex; 
@@ -84,14 +109,15 @@ nav li:hover a{
 
 /*Segunda Area*/
 .ppal{
-  position: relative;
-  grid-area: ppal;
+  grid-area: ppal1;
   display: flex;
   width: 100%;
   height: 35rem;
   background: linear-gradient(0deg, #171133, #3691b6);
+  position: relative;
 }  
 #texto{
+  grid-area: ppal;
   width: 50%;
   padding-top: 7rem;
   padding-left: 8rem;
@@ -114,6 +140,7 @@ nav li:hover a{
   font-weight: 800;
 }
 #celu{
+  grid-area: celu;
   position: absolute;
   top: 4rem;
   left: 47rem;
@@ -124,21 +151,23 @@ nav li:hover a{
   grid-area: basic;
   width: 100%;
   height: 35rem;
+  position: relative;
 }
 #brands{
   background-color: white;
   justify-content:space-around; 
-  width: 80%;
+  width:80%;
   border-radius: 10px;
   position: relative;
   left: 100px;
-  display: grid;
-  grid-template-areas: "b2 b3 b4 b5 b6 b7";
+  display: flex;
+  grid-area: "b2 b3 b4 b5 b6 b7";
   }
 #text2{
-    padding-top: 150px;
-    text-align: center;
-    justify-content: center;
+  grid-area: text2;
+  padding-top: 150px;
+  text-align: center;
+  justify-content: center;
 }
 #text2 h1{
   font-size: 3rem;
@@ -146,7 +175,7 @@ nav li:hover a{
 
 /*Cuarta Area*/
 .cards{
-  grid-area: cards;
+  grid-area: cards1;
   width: 100%;
   height: 35rem;
   position: relative;
@@ -159,6 +188,7 @@ nav li:hover a{
   position: relative;
 }
 .slider{
+  grid-area: cards;  
   display: flex;
   width: 200%;
   height: 300px;
@@ -194,7 +224,6 @@ nav li:hover a{
   background-color: #35BFE7;
   border-radius: 5%;
 }
-
 #icon2{
   font-size: 50px;
   color: white;
@@ -225,42 +254,44 @@ nav li:hover a{
   padding: 1rem;
   background-color:#ECBF24;
   }
-
-
-
 .slider__btn{
   position: absolute;
   color: red;
   width: 40px;
   height: 40px;
-  background-color: rgb(165, 165, 192, 0.7);
+  /*background-color: rgb(165, 165, 192, 0.7);*/
+  background-color: violet;
   top: 85%;
-  transform: translateX(50%);
+  transform: translateY(-10%);
   text-align: center; 
   border-radius: 50%;
 }
 .slider__btn:hover{
   background-color: #fff;
 }
-.slider__btn--left{
-left: 100px;
+/*.slider__btn--left{
+  left: 10px;
+  
 }
 .slider__btn--rigth{
-right: 100px;
-}
+  left: 10px;
+  
+}*/
 
 /*QuintaArea*/
 .stay{
-  grid-area: faq;
+  grid-area: stay;
   width: 100%;
   height: 35rem;
   position: relative;
 }
 #cel{
+  grid-area: cel;
   position: absolute;
   left: 3rem;
 } 
 #text3{
+  grid-area: text3;
   position: absolute;
   left: 40rem;
   top: 1rem;
@@ -290,12 +321,14 @@ right: 100px;
   position: relative;
 }
 .icon{
+    display: flex;
     justify-content: space-around;
-    display: grid;
-    grid-template-areas: "f1 f2 f3 f4";
-    position: relative;
+    /*display: grid;*/
+    grid-area: "f1 f2 . . f3 f4";
+    /*position: relative;*/
 }
 #text4{
+  grid-area: text4;
   position: absolute;
   top: 10rem;
   left: 28rem;
@@ -305,12 +338,12 @@ right: 100px;
 }
 /*Septima Area*/
 .uni{
-  grid-area: uni;
   width: 100%;
   height: 35rem;
   position: relative;
 }
 .uni #text5{
+  grid-area: text5;
   position: absolute;
   margin-left: 9rem;
   padding-left: 3rem;
@@ -334,6 +367,7 @@ right: 100px;
   margin-left: 5rem;
 }
 #texto6a{
+  grid-area: text6a;
   padding-bottom: 8rem;
   padding-top: 5rem;
   padding-left: 6rem;
@@ -353,6 +387,7 @@ right: 100px;
   margin-top: 2rem;
 }
 #cel3{
+  grid-area: cel3;
   position: absolute;
   top: -4rem;
   left: 55rem;
@@ -364,8 +399,9 @@ right: 100px;
   width: 100%;
   height: 35rem;
   position: relative;
-}
+  }
 #post1{
+  grid-area: post1;
   display: flex;
   width: 80%;
   padding-left: 12rem;
@@ -394,12 +430,14 @@ right: 100px;
 }
 #post2{
   display: flex;
+  grid-area: post2;
   width: 80%;
   padding-left: 12rem;
   padding-top: 4rem;
 } 
 #post3{
   display: flex;
+  grid-area: post3;
   width: 80%;
   padding-left: 12rem;
   padding-top: 4rem;
@@ -434,8 +472,25 @@ color: #38436D;
 #last h4{
   color: white;
 }
+#img5{
+  grid-area: img5;
+}
+#it1{
+  grid-area: it1;
+}
+#it2{
+  grid-area: it2;
+}
+#it3{
+  grid-area: it3;
+}
+#it4{
+  grid-area: it4;
+}
+
 /*Area once*/
 footer{
+  position: relative;
   grid-area: footer;
   width: 100%;
   height: 2rem;
@@ -445,3 +500,54 @@ footer{
   text-align: center;
   justify-content:center ;
 }
+
+@media screen and (max-width:858px) {
+.menu{
+  height: 65px;
+}  
+.bmenu{
+  display: inline-flex;
+}
+.menu_items {
+  position: fixed;
+  width: 100vw;
+  height: calc(100% - 65px);
+  background: none;
+  top: -100vh;
+  text-align: center;
+  transition: all .4s;
+  flex-direction: column;
+}
+.menu_items li{
+  margin: 30px 0 0 0;
+  line-height: 30px;
+}
+.menu_items li:hover {
+  background: none;
+}
+.menu_items li a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold; 
+}
+}
+
+
+
+      /*@media screen and (max-with:376px){
+      header{
+        grid-template-areas:  "nav nav";
+      }
+      #ppal{
+        grid-template-areas:  "ppal ppal"
+                              "celu celu";
+      }
+      #basic{
+        grid-template-areas:  "b2 b3"
+                              "b4 b5"
+                              "b6 b7"
+                              "text2 text2"
+                              "text2 text2";
+      }                              
+      }*/
+    

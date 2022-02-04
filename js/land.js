@@ -30,15 +30,25 @@ function Prev() {
     }, 500);
 }
 
-btnRigth.addEventListener('click', function(){
+slider.addEventListener('mouseover', function(){
     Next();
 });
 
-btnLeft.addEventListener('click', function(){
+slider.addEventListener('mouseover', function(){
     Prev();
 });
 
 setInterval(function(){
     Next();
-}, 4000)
+}, 3500)
 /*src="https://www.youtube.com/embed/WI0aCIEYXvw"*/
+
+addEventListener('DOMContentloaded', () => {
+    const bmenu = document.querySelector('.bmenu')
+    if (bmenu){
+        bmenu.addEventListener('click', () => {
+            const menu_items = document.querySelector('.menu_items')
+            menu_items.classList.toggle('show')
+        })
+    }
+})
