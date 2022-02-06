@@ -192,6 +192,7 @@ nav li:hover a{
   width: 100%;
   height: 35rem;
   position: relative;
+  top: 3rem;
 }
 
 .container-slider {
