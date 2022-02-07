@@ -55,6 +55,7 @@ main{
   font-size: 1rem;
   color: #1d109e;
 }
+
 .menu{
   padding-left: 8rem;
   width: 90%;
@@ -609,6 +610,7 @@ footer{
       .bmenu{
         display: inline-flex;
       }
+      
       .menu_items {
         position: fixed;
         width: 100vw;
