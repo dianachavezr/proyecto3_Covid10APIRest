@@ -5,6 +5,7 @@
 *{
   margin: 0;
   padding: 0px;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -18,12 +19,10 @@ body{
 #container {
   background-image: linear-gradient(#3691b6,#171133, #171133, #171133,#171133,#171133,#171133,#171133);
   width: 100%;
-  max-width: 1290px;
-  margin: 0px auto;
+  
 }
 
 main{
-  grid-gap: 10px;  
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(13, auto);
@@ -53,7 +52,6 @@ main{
   z-index: 20;
   width: 100%;
   height: 3rem;
-  max-width: 1290px;
   font-size: 1rem;
   color: #1d109e;
 }
@@ -137,7 +135,7 @@ nav li:hover a{
   position: absolute;
   top: 4rem;
   left: -12rem;
-  height: 28rem;
+  height: 30rem;
 }
 /*tercera area*/
 #brands{
@@ -150,9 +148,9 @@ nav li:hover a{
   position: relative;
   height: 6rem;
   background-color: white;
-  width:80%;
+  width:75%;
   border-radius: 10px;
-  left: 100px;
+  left: 10rem;
 }
 
 .b2{
@@ -209,9 +207,8 @@ nav li:hover a{
 }
 
 .slider__section{
-  /*display: block;*/
-  margin-left: 40px;
-  padding-left: 2rem;
+  margin-left: 3rem;
+  padding-left: 3rem;
   padding-top: 2rem;
   padding-right: 1rem;
   width: 100%;  
@@ -231,41 +228,46 @@ nav li:hover a{
   font-size: 11.5px;
 }
 #icon1{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color: #35BFE7;
-  border-radius: 5%;
+  border-radius: 6%;
 }
 #icon2{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color: #FA4C9A;
+  border-radius: 6%;
 }
 #icon3{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color:#ECBF24;
+  border-radius: 6%;
 }
 #icon4{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color: tomato;
+  border-radius: 6%;
 }
 #icon5{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color: #35BFE7;
+  border-radius: 6%;
   }
 #icon6{
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   padding: 1rem;
   background-color:#ECBF24;
+  border-radius: 6%;
   }
 .slider__btn{
   position: absolute;
@@ -331,15 +333,29 @@ nav li:hover a{
  /*sexta area*/
 
 #icons{
-    grid-area: icons;  
     justify-content: space-around;
     text-align: center;
-    position: relative;
+    position: relative;  
+    width: 80%;  
+    left: 9rem;
+    grid-area: icons;  
     display: grid;
-    grid-template-columns:repeat(4, auto)
-    
+    grid-template-columns:repeat(4, auto);
+    grid-template-areas: "f1 f2 f3 f4";
   }
-/*septima Area*/
+
+.f1{
+  grid-area: f1;
+}
+.f2{
+  grid-area: f2;
+}.f3{
+  grid-area: f3;
+}.f4{
+  grid-area: f4;
+}
+
+  /*septima Area*/
 .faq{
   grid-area: faq;
   width: 100%;
@@ -351,7 +367,7 @@ nav li:hover a{
 #text4{
   position: absolute;
   top: 6rem;
-  left: 28rem;
+  left: 38rem;
   }
 #text4 h1{
   font-size: 3rem;
@@ -368,7 +384,9 @@ nav li:hover a{
   margin-left: 9rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  width: 75%;
   background-color: #1B2A4E;
+  border-radius: 5px;
 }
 
 /*Novena Area*/
@@ -377,6 +395,7 @@ nav li:hover a{
   width: 100%;
   height: 35rem;
   position: relative;
+  margin-top: 2rem;
   
 }
 
@@ -415,7 +434,7 @@ nav li:hover a{
   grid-area: cel3;
   position: absolute;
   top: -4rem;
-  left: 55rem;
+  left: 60rem;
 }
 
 /*Decima area*/
@@ -441,17 +460,17 @@ nav li:hover a{
 .cont a{
   text-decoration: underline;
   color: white;
-  padding-left: 5rem;
+  padding-left: 12rem;
 }
 .cont2 a{
   text-decoration: underline;
   color: white;
-  padding-left: 6rem;
+  padding-left: 12.8rem;
 }
 .cont3 a{
   text-decoration: underline;
   color: white;
-  padding-left: 7rem;
+  padding-left: 13.5rem;
 }
 #post2{
   display: flex;
@@ -528,7 +547,7 @@ footer{
   text-align: center;
   justify-content:center ;
 }
-
+/*
 @media screen and (max-width:858px) {
 .menu{
   height: 65px;
@@ -561,21 +580,2179 @@ footer{
 }
 
 
+/*P R I M E R   B R E A K P O I N T */
 
-      /*@media screen and (max-with:376px){
-      header{
-        grid-template-areas:  "nav nav";
+
+@media screen and (max-width:320px){
+      main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas:    "nav"
+                                "ppal"
+                                "brands"
+                                "text2"
+                                "cards"
+                                "stay"
+                                "icons" 
+                                "faq"
+                                "uni"
+                                "get"
+                                "post"
+                                "about"
+                                "footer";
       }
-      #ppal{
-        grid-template-areas:  "ppal ppal"
-                              "celu celu";
+      .menu{
+        height: 65px;
+        padding-left: 0;
+      }  
+      .bmenu{
+        display: inline-flex;
       }
-      #basic{
-        grid-template-areas:  "b2 b3"
-                              "b4 b5"
-                              "b6 b7"
-                              "text2 text2"
-                              "text2 text2";
-      }                              
+      .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: none;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+      }
+      .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+      }
+      .menu_items li:hover {
+        background: none;
+      }
+      .menu_items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold; 
+      }
+      
+      
+      /*Segunda Area*/
+      .ppal{
+        grid-area: ppal;
+        width: 100%;
+        height: 44rem;
+        position: relative;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:  "ppal1"
+                              "celu";
+      }  
+      #texto{
+        grid-area: ppal1;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        ;
+        }
+      .ppal h1{
+        font-size: 1.3rem;
+      }
+      .ppal p{
+        font-size: 50%;  
+
+      }
+      .ppal button{
+        color: white;
+        background-color: #121158;
+        width: 12rem;
+        height: 3rem;
+        padding-top: .4rem;
+        border-radius: 2rem;
+        border: solid;
+        border-color: #121158;
+        margin-top: 1rem;
+        font-weight: 800;
+      }
+      #celu{
+        grid-area: celu;
+        position: absolute;
+        top: -4.5rem;
+        left: .5rem;
+        height: 23rem;
+      }
+      /*tercera area*/
+      #brands{
+        grid-area: brands;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "b2 b3"    
+                             "b4 b5"    
+                             "b6 b7";
+        position: relative;
+        height: 20rem;
+        width:  5rem;
+        border-radius: 10px;
+      }
+      
+      .b2{
+        grid-area: b2;
+        
+      }
+      .b3{
+        grid-area: b3;
+      }
+      .b4{
+       grid-area: b4;
+      }
+      .b5{
+        grid-area: b5;
+      }
+      .b6{
+        grid-area: b6;
+      }
+      .b7{
+        grid-area: b7;
+      }
+      /*Tercera bis BIS///////*/
+      #text2{
+        grid-area: text2;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 10rem;
+        top: 4rem;
+       }
+      #text2 h1{
+        font-size: 1.3rem; 
+      }
+      #text2 p{
+        font-size: .5rem;
+      }
+
+      /*Cuarta Area*/
+      .cards{
+        grid-area: cards;
+        width: 100%;
+        height: 25rem;
+        position: relative;
+        top: 3rem;
+        overflow: hidden;  
+      }
+      
+      .container-slider {
+        width: 90%;
+        margin: auto;
+        
+        position: relative;
+      }
+      .slider{
+        display: flex;
+        width: 600%;
+        height: 300px;
+        margin-left: -100%;
+      }
+      
+      .slider__section{
+        margin-left: 0.5rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 1rem;
+        width: 100%;  
+        height: 100%;
+        border-radius: 10px;
+        background-color: whitesmoke;  
+        color: rgb(165, 165, 192);
+        /*box-shadow: 0 0 0,
+                    0px 50px 0px;*/
+      }
+      .slider__section h2{
+        color: #3C3B75;
+        margin-top: 1rem;
+      }
+      .slider__section p{
+        margin-top: 1rem;
+        font-size: 11.5px;
+      }
+      #icon1{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color: #35BFE7;
+        border-radius: 6%;
+      }
+      #icon2{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color: #FA4C9A;
+        border-radius: 6%;
+      }
+      #icon3{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color:#ECBF24;
+        border-radius: 6%;
+      }
+      #icon4{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color: tomato;
+        border-radius: 6%;
+      }
+      #icon5{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color: #35BFE7;
+        border-radius: 6%;
+        }
+      #icon6{
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        background-color:#ECBF24;
+        border-radius: 6%;
+        }
+      .slider__btn{
+        position: absolute;
+        color: red;
+        width: 40px;
+        height: 40px;
+        /*background-color: rgb(165, 165, 192, 0.7);*/
+        background-color: violet;
+        top: 85%;
+        transform: translateY(-10%);
+        text-align: center; 
+        border-radius: 50%;
+      }
+      .slider__btn:hover{
+        background-color: #fff;
+      }
+      /*.slider__btn--left{
+        left: 10px;
+        
+      }
+      .slider__btn--rigth{
+        left: 10px;
+        
       }*/
+      
+      /*QuintaArea*/
+      .stay{
+        grid-area: stay;
+        width: 100%;
+        height: 40rem;
+        position: relative;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:  "text3"
+                              "cel ";
+      }
+      #cel{
+        grid-area: cel;
+        left: 0.8rem;
+      }
+      #cel img{
+        height: 17rem;
+        
+      }
+
+      #text3{
+        grid-area: text3;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+      }
+      #text3 h1{
+        font-size: 1.3rem;
+         
+      }
+      #text3 p{
+        font-size: .6rem;
+      }
+      #butstay button{
+        background-color: #3639AE;
+        color: white;
+        width: 200px;
+        height: 60px;
+        border-radius: .6rem;
+        border: solid;
+        border-color: #121158;
+        font-weight: 800;
+        margin-top: 2rem;
+       }
+       
+       /*sexta area*/
+      
+      #icons{
+          
+          text-align: center;
+          position: relative;  
+          
+          left: 4rem;
+          grid-area: icons;  
+          display: grid;
+          grid-template-rows: repeat(4. auto);
+          grid-template-areas:  "f1"
+                                "f2"
+                                "f3"
+                                "f4";
+        }
+      
+      .f1{
+        grid-area: f1;
+      }
+      .f2{
+        grid-area: f2;
+      }.f3{
+        grid-area: f3;
+      }.f4{
+        grid-area: f4;
+      }
+      
+        /*septima Area*/
+      .faq{
+        grid-area: faq;
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+      }
+      #text4{
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+        }
+      #text4 h1{
+        font-size: 1.3rem;
+      }
+      /*Octava Area*/
+      #uni{
+        width: 100%;
+        height: 35rem;
+        position: relative;
+        grid-area: uni;
+        
+      }
+      #text5{
+        background-color: #1B2A4E;
+        border-radius: 5px;
+        position: absolute;
+        margin-left: 0.5rem;
+        width: 310px;
+      }
+      #text5 h3{
+        font-size: 0.65rem;
+      }
+      #text5 p{
+        font-size: .5rem;
+      } 
+      
+      /*Novena Area*/
+      .get{
+        grid-area: get;
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "text6a" 
+                              "cel3";
+      }
+      
+      #texto6{
+        position: absolute;
+        width: 310px;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
+        margin-left: .3rem;
+      }
+      #texto6a{
+        grid-area: text6a;
+        padding-bottom: 8rem;
+        padding-top: 5rem;
+        position: relative;
+      }
+      #texto6a h1{
+        font-size: 1.3rem;
+      }
+      #texto6a p{
+        font-size: 0.4rem;
+        
+
+      }
+      #but4{
+        background-color: white;
+        color: black;
+        border-radius: .6rem;
+        border: solid;
+        border-color: white;
+        font-weight: 600;
+      }
+      #cel3{
+        grid-area: cel3;
+        position: realtive;
+        left: 4rem;
+      }
+      #cel3 img{
+        height: 25rem;
+      }
+
+      /*Decima area*/
+      .post{
+        grid-area: post;
+        width: 310px;
+        height: 80rem;
+        position: relative;
+        }
+      
+        #post1{
+        display: flex;
+        width: 80%;
+        padding-left: 0;
+        padding-top: 0;
+      } 
+      .cont a{
+        text-decoration: underline;
+        color: white;
+        padding-left: 0;
+      }
+
+      #post2{
+        display: flex;
+        width: 80%;
+        padding-left: 0;
+        padding-top: 1rem;
+      } 
+      .cont2 a{
+        text-decoration: underline;
+        color: white;
+        padding-left: 1rem;
+      }
+      #post3{
+        display: flex;
+        width: 80%;
+        padding-left: 0;
+        padding-top: 1rem;
+      } 
+      .cont3 a{
+        text-decoration: underline;
+        color: white;
+        padding-left: 0rem;
+      }
+      
+      #img1{
+        width: 5rem;
+        height: 5rem;
+      }
+      #texto7{
+        margin-left: 3rem;
+        padding-top: 1rem;
+        
+      }
+      
+      
+      /*Onceava Area*/
+      .about{
+        grid-area: about;
+        width: 100%;
+        height: 108rem;
+        background-color: #1B2A4E;
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "last"
+                              "it1"
+                              "it2"
+                              "it3"
+                              "it4";
+      
+      }
+      #last{
+      grid-area: last;  
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      padding-left: 5rem;
+      padding-top: 2rem;
+      color: #38436D;
+      }
+      #redes{
+        padding-top: 0.5rem;
+      }
+      .ti-twitter, .ti-linkedin, .ti-youtube{
+        padding-left: 1rem;
+        color: white;
+      }
+      .ti-facebook{
+        color: white;
+      }
+      #last h4{
+        color: white;
+      }
+      
+      #it1{
+        grid-area: it1;
+        padding-left: 5rem;
+      }
+      #it2{
+        grid-area: it2;
+        padding-left: 5rem;
+      }
+      #it3{
+        grid-area: it3;
+        padding-left: 5rem;
+      }
+      #it4{
+        padding-left: 5rem;
+        grid-area: it4;
+      }
+      
+      /*Doceava once*/
+      footer{
+        position: relative;
+        grid-area: footer;
+        width: 100%;
+        height:3rem;
+        background-color: #1B2A4E;
+        color: whitesmoke;
+        font-size: xx-small;
+        text-align: center;
+        justify-content:center ;
+      }
+      
+    }
+
+    /*S  E  G  U  N  D  O   B   R   E   A   K   P   O   I   N   T */
+
+      @media only screen and (min-width: 321px) and (max-width: 640px) {
+          main{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(13, auto);
+          grid-template-areas:    "nav"
+                                  "ppal"
+                                  "brands"
+                                  "text2"
+                                  "cards"
+                                  "stay"
+                                  "icons" 
+                                  "faq"
+                                  "uni"
+                                  "get"
+                                  "post"
+                                  "about"
+                                  "footer";
+        }
+        .menu{
+          height: 65px;
+          padding-left: 0;
+        }  
+        .bmenu{
+          display: inline-flex;
+        }
+        .menu_items {
+          position: fixed;
+          width: 100vw;
+          height: calc(100% - 65px);
+          background: none;
+          top: -100vh;
+          text-align: center;
+          transition: all .4s;
+          flex-direction: column;
+        }
+        .menu_items li{
+          margin: 30px 0 0 0;
+          line-height: 30px;
+        }
+        .menu_items li:hover {
+          background: none;
+        }
+        .menu_items li a {
+          font-size: 20px;
+          color: #fff;
+          font-weight: bold; 
+        }
+        
+        
+        /*Segunda Area*/
+        .ppal{
+          grid-area: ppal;
+          width: 100%;
+          height: 44rem;
+          position: relative;
+          display:grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas:  "ppal1"
+                                "celu";
+        }  
+        #texto{
+          grid-area: ppal1;
+          padding-top: 3rem;
+          padding-left: 8rem;
+          margin-top: 1rem;
+        }
+        .ppal h1{
+          font-size: 1.4rem;
+        }
+        .ppal p{
+          font-size: 50%;  
+  
+        }
+        .ppal button{
+          color: white;
+          background-color: #121158;
+          width: 12rem;
+          height: 3rem;
+          padding-top: .4rem;
+          border-radius: 2rem;
+          border: solid;
+          border-color: #121158;
+          margin-top: 1rem;
+          font-weight: 800;
+        }
+        #celu{
+          grid-area: celu;
+          position: absolute;
+          top: -4.5rem;
+          left: 7rem;
+          height: 25rem;
+        }
+        /*tercera area*/
+        #brands{
+          grid-area: brands;  
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(3, auto);
+          grid-template-areas: "b2 b3"    
+                               "b4 b5"    
+                               "b6 b7";
+          position: relative;
+          height: 20rem;
+          width:  14rem;
+          border-radius: 10px;
+        }
+        
+        .b2{
+          grid-area: b2;
+          
+        }
+        .b3{
+          grid-area: b3;
+        }
+        .b4{
+         grid-area: b4;
+        }
+        .b5{
+          grid-area: b5;
+        }
+        .b6{
+          grid-area: b6;
+        }
+        .b7{
+          grid-area: b7;
+        }
+        /*Tercera bis BIS///////*/
+        #text2{
+          grid-area: text2;
+          position: relative;
+          text-align: center;
+          width: 100%;
+          height: 10rem;
+          top: 4rem;
+         }
+        #text2 h1{
+          font-size: 1.3rem; 
+        }
+        #text2 p{
+          font-size: .5rem;
+        }
+  
+        /*Cuarta Area*/
+        .cards{
+          grid-area: cards;
+          width: 100%;
+          height: 25rem;
+          position: relative;
+          top: 3rem;
+          overflow: hidden;  
+        }
+        
+        .container-slider {
+          width: 90%;
+          margin: auto;
+          
+          position: relative;
+        }
+        .slider{
+          display: flex;
+          width: 600%;
+          height: 300px;
+          margin-left: -100%;
+        }
+        
+        .slider__section{
+          margin-left: 0.5rem;
+          padding-left: 3rem;
+          padding-top: 2rem;
+          padding-right: 1rem;
+          width: 100%;  
+          height: 100%;
+          border-radius: 10px;
+          background-color: whitesmoke;  
+          color: rgb(165, 165, 192);
+          /*box-shadow: 0 0 0,
+                      0px 50px 0px;*/
+        }
+        .slider__section h2{
+          color: #3C3B75;
+          margin-top: 1rem;
+        }
+        .slider__section p{
+          margin-top: 1rem;
+          font-size: 11.5px;
+        }
+        #icon1{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color: #35BFE7;
+          border-radius: 6%;
+        }
+        #icon2{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color: #FA4C9A;
+          border-radius: 6%;
+        }
+        #icon3{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color:#ECBF24;
+          border-radius: 6%;
+        }
+        #icon4{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color: tomato;
+          border-radius: 6%;
+        }
+        #icon5{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color: #35BFE7;
+          border-radius: 6%;
+          }
+        #icon6{
+          font-size: 3rem;
+          color: white;
+          padding: 1rem;
+          background-color:#ECBF24;
+          border-radius: 6%;
+          }
+        .slider__btn{
+          position: absolute;
+          color: red;
+          width: 40px;
+          height: 40px;
+          /*background-color: rgb(165, 165, 192, 0.7);*/
+          background-color: violet;
+          top: 85%;
+          transform: translateY(-10%);
+          text-align: center; 
+          border-radius: 50%;
+        }
+        .slider__btn:hover{
+          background-color: #fff;
+        }
+        /*.slider__btn--left{
+          left: 10px;
+          
+        }
+        .slider__btn--rigth{
+          left: 10px;
+          
+        }*/
+        
+        /*QuintaArea*/
+        .stay{
+          grid-area: stay;
+          width: 100%;
+          height: 40rem;
+          position: relative;
+          display:grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, auto);
+          grid-template-areas:  "text3"
+                                "cel ";
+        }
+        #cel{
+          grid-area: cel;
+          left: 3rem;
+        }
+        #cel img{
+          height: 22rem;
+          
+        }
+  
+        #text3{
+          grid-area: text3;
+          position: absolute;
+          top: 1rem;
+          left: 6rem;
+        }
+        #text3 h1{
+          font-size: 1.6rem;
+           
+        }
+        #text3 p{
+          font-size: .8rem;
+        }
+        #butstay button{
+          background-color: #3639AE;
+          color: white;
+          width: 200px;
+          height: 60px;
+          border-radius: .6rem;
+          border: solid;
+          border-color: #121158;
+          font-weight: 800;
+          margin-top: 2rem;
+         }
+         
+         /*sexta area*/
+        
+        #icons{
+            
+            text-align: center;
+            position: relative;  
+            height: 25rem;
+            left: 4rem;
+            grid-area: icons;  
+            display: grid;
+            grid-template-rows: repeat(4. auto);
+            grid-template-areas:  "f1"
+                                  "f2"
+                                  "f3"
+                                  "f4";
+                                  padding-top: 5rem;
+                                  padding-left: 6rem;
+          }
+        
+        .f1{
+          grid-area: f1;
+        }
+        .f2{
+          grid-area: f2;
+        }.f3{
+          grid-area: f3;
+        }.f4{
+          grid-area: f4;
+        }
+        
+          /*septima Area*/
+        .faq{
+          grid-area: faq;
+          width: 100%;
+          height: 15rem;
+          text-align: center;
+          justify-content: center;
+          position: relative;
+        }
+        #text4{
+          position: absolute;
+          top: 5rem;
+          left: 7rem;
+          }
+        #text4 h1{
+          font-size: 1.6rem;
+        }
+        /*Octava Area*/
+        #uni{
+          width: 100%;
+          height: 35rem;
+          position: relative;
+          grid-area: uni;
+          
+        }
+        #text5{
+          background-color: #1B2A4E;
+          border-radius: 5px;
+          position: absolute;
+          margin-left: 0.5rem;
+          width: 580px;
+        }
+        #text5 h3{
+          font-size: 1rem;
+        }
+        #text5 p{
+          font-size: .7rem;
+        } 
+        
+        /*Novena Area*/
+        .get{
+          grid-area: get;
+          width: 100%;
+          height: 50rem;
+          position: relative;
+          margin-top: 2rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, auto);
+          grid-template-areas: "text6a" 
+                                "cel3";
+        }
+        
+        #texto6{
+          position: absolute;
+          width: 600px;
+          border-radius: 0.5rem;
+          background-image: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
+          margin-left: .3rem;
+        }
+        #texto6a{
+          grid-area: text6a;
+          padding-bottom: 8rem;
+          padding-top: 5rem;
+          position: relative;
+        }
+        #texto6a h1{
+          font-size: 1.6rem;
+        }
+        #texto6a p{
+          font-size: 0.8rem;
+          
+  
+        }
+        #but4{
+          background-color: white;
+          color: black;
+          border-radius: .6rem;
+          border: solid;
+          border-color: white;
+          font-weight: 600;
+        }
+        #cel3{
+          grid-area: cel3;
+          position: realtive;
+          left: 8rem;
+        }
+        #cel3 img{
+          height: 27rem;
+        }
+  
+        /*Decima area*/
+        .post{
+          grid-area: post;
+          width: 310px;
+          height: 80rem;
+          position: relative;
+          }
+        
+          #post1{
+          display: flex;
+          width: 80%;
+          padding-left: 1.3rem;
+          padding-top: 0;
+        } 
+        .cont a{
+          text-decoration: underline;
+          color: white;
+          padding-left: 1.5rem;
+        }
+  
+        #post2{
+          display: flex;
+          width: 80%;
+          padding-left: 1.3rem;
+          padding-top: 1rem;
+        } 
+        .cont2 a{
+          text-decoration: underline;
+          color: white;
+          padding-left: 4rem;
+        }
+        #post3{
+          display: flex;
+          width: 80%;
+          padding-left: 1.3rem;
+          padding-top: 1rem;
+        } 
+        .cont3 a{
+          text-decoration: underline;
+          color: white;
+          padding-left: 3rem;
+        }
+        
+        #img1{
+          width: 7rem;
+          height: 7rem;
+        }
+        #texto7{
+          margin-left: 3rem;
+          padding-top: 1rem;
+          
+        }
+        
+        
+        /*Onceava Area*/
+        .about{
+          grid-area: about;
+          width: 100%;
+          height: 108rem;
+          background-color: #1B2A4E;
+          position: relative;
+          display: grid;
+          grid-template-rows: repeat(5, auto);
+          grid-template-areas: "last"
+                                "it1"
+                                "it2"
+                                "it3"
+                                "it4";
+        
+        }
+        #last{
+        grid-area: last;  
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        padding-left: 8rem;
+        padding-top: 2rem;
+        color: #38436D;
+        }
+        #redes{
+          padding-top: 0.5rem;
+        }
+        .ti-twitter, .ti-linkedin, .ti-youtube{
+          padding-left: 1rem;
+          color: white;
+        }
+        .ti-facebook{
+          color: white;
+        }
+        #last h4{
+          color: white;
+        }
+        
+        #it1{
+          grid-area: it1;
+          padding-left: 8rem;
+        }
+        #it2{
+          grid-area: it2;
+          padding-left: 8rem;
+        }
+        #it3{
+          grid-area: it3;
+          padding-left: 8rem;
+        }
+        #it4{
+          padding-left: 8rem;
+          grid-area: it4;
+        }
+        
+        /*Doceava once*/
+        footer{
+          position: relative;
+          grid-area: footer;
+          width: 100%;
+          height:3rem;
+          background-color: #1B2A4E;
+          color: whitesmoke;
+          font-size: xx-small;
+          text-align: center;
+          justify-content:center ;
+        }
+        
+      }
+  
+      /* T E R C E R     B R E A K P O I N T */
+
+  @media only screen and (min-width: 641px) and (max-width: 830px) {
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(13, auto);
+      grid-template-areas:    "nav nav"
+                              "ppal ppal"
+                              "brands brands"
+                              "text2 text2"
+                              "cards cards"
+                              "stay stay"
+                              "icons icons" 
+                              "faq faq"
+                              "uni uni"
+                              "get get"
+                              "post post"
+                              "about about"
+                              "footer footer";
+    }
+    .menu{
+      height: 65px;
+      padding-left: 0;
+    }  
+    .bmenu{
+      display: inline-flex;
+    }
+    .menu_items {
+      position: fixed;
+      width: 100vw;
+      height: calc(100% - 65px);
+      background: none;
+      top: -100vh;
+      text-align: center;
+      transition: all .4s;
+      flex-direction: column;
+    }
+    .menu_items li{
+      margin: 30px 0 0 0;
+      line-height: 30px;
+    }
+    .menu_items li:hover {
+      background: none;
+    }
+    .menu_items li a {
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold; 
+    }
     
+    
+    /*Segunda Area*/
+    .ppal{
+      grid-area: ppal;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:  "ppal1 celu"
+                            "ppal1 celu";
+    }  
+    #texto{
+      grid-area: ppal1;
+      padding-top: 3rem;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      ;
+      }
+    .ppal h1{
+      font-size: 2.0rem;
+    }
+    .ppal p{
+      font-size: 1rem1;  
+
+    }
+    .ppal button{
+      color: white;
+      background-color: #121158;
+      width: 12rem;
+      height: 3rem;
+      padding-top: .4rem;
+      border-radius: 2rem;
+      border: solid;
+      border-color: #121158;
+      margin-top: 1rem;
+      font-weight: 800;
+    }
+    #celu{
+      grid-area: celu;
+      position: absolute;
+      top: 5rem;
+      left: .5rem;
+      height: 23rem;
+    }
+    /*tercera area*/
+    #brands{
+      grid-area: brands;  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "b2 b3 b4"    
+                           "b5 b6 b7";    
+      position: relative;
+      height: 13rem;
+      width:  60%;
+      border-radius: 10px;
+    }
+    
+    .b2{
+      grid-area: b2;
+      
+    }
+    .b3{
+      grid-area: b3;
+    }
+    .b4{
+     grid-area: b4;
+    }
+    .b5{
+      grid-area: b5;
+    }
+    .b6{
+      grid-area: b6;
+    }
+    .b7{
+      grid-area: b7;
+    }
+    /*Tercera bis BIS///////*/
+    #text2{
+      grid-area: text2;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 10rem;
+      top: 3rem;
+     }
+    #text2 h1{
+      font-size: 2rem; 
+    }
+    #text2 p{
+      font-size: 1rem;
+    }
+
+    /*Cuarta Area*/
+    .cards{
+      grid-area: cards;
+      width: 100%;
+      height: 25rem;
+      position: relative;
+      top: 3rem;
+      overflow: hidden;  
+    }
+    
+    .container-slider {
+      width: 100%;
+      margin: auto;
+      
+      position: relative;
+    }
+    .slider{
+      display: flex;
+      width: 300%;
+      height: 300px;
+      margin-left: -100%;
+    }
+    
+    .slider__section{
+      margin-left: 0.5rem;
+      padding-left: 3rem;
+      padding-top: 2rem;
+      padding-right: 1rem;
+      width: 100%;  
+      height: 100%;
+      border-radius: 10px;
+      background-color: whitesmoke;  
+      color: rgb(165, 165, 192);
+      /*box-shadow: 0 0 0,
+                  0px 50px 0px;*/
+    }
+    .slider__section h2{
+      color: #3C3B75;
+      margin-top: 1rem;
+    }
+    .slider__section p{
+      margin-top: 1rem;
+      font-size: 11.5px;
+    }
+    #icon1{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #35BFE7;
+      border-radius: 6%;
+    }
+    #icon2{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #FA4C9A;
+      border-radius: 6%;
+    }
+    #icon3{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color:#ECBF24;
+      border-radius: 6%;
+    }
+    #icon4{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: tomato;
+      border-radius: 6%;
+    }
+    #icon5{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #35BFE7;
+      border-radius: 6%;
+      }
+    #icon6{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color:#ECBF24;
+      border-radius: 6%;
+      }
+    .slider__btn{
+      position: absolute;
+      color: red;
+      width: 40px;
+      height: 40px;
+      /*background-color: rgb(165, 165, 192, 0.7);*/
+      background-color: violet;
+      top: 85%;
+      transform: translateY(-10%);
+      text-align: center; 
+      border-radius: 50%;
+    }
+    .slider__btn:hover{
+      background-color: #fff;
+    }
+    /*.slider__btn--left{
+      left: 10px;
+      
+    }
+    .slider__btn--rigth{
+      left: 10px;
+      
+    }*/
+    
+    /*QuintaArea*/
+    .stay{
+      grid-area: stay;
+      width: 100%;
+      height: 40rem;
+      position: relative;
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:  "cel" "text3" ;
+    }
+    #cel{
+      grid-area: cel;
+      left: 0.2rem;
+      top: 8rem;
+    }
+    #cel img{
+      height: 25rem;
+    }
+
+    #text3{
+      grid-area: text3;
+      position: absolute;
+      top: -20rem;
+      left: 28rem;
+    }
+    #text3 h1{
+      font-size: 2rem;
+       
+    }
+    #text3 p{
+      font-size: 1rem;
+    }
+    #butstay button{
+      background-color: #3639AE;
+      color: white;
+      width: 200px;
+      height: 60px;
+      border-radius: .6rem;
+      border: solid;
+      border-color: #121158;
+      font-weight: 800;
+      margin-top: 2rem;
+     }
+     
+     /*sexta area*/
+    
+    #icons{
+        text-align: center;
+        position: relative;  
+        left: 4rem;
+        grid-area: icons;  
+        padding-top: 2rem;
+      }
+    .f1{
+      grid-area: f1;
+    }
+    .f2{
+      grid-area: f2;
+    }
+    .f3{
+      grid-area: f3;
+    }
+    .f4{
+      grid-area: f4;
+    }
+    
+      /*septima Area*/
+    .faq{
+      grid-area: faq;
+      width: 100%;
+      height: 15rem;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+    }
+    #text4{
+      position: absolute;
+      top: 5rem;
+      left: 13rem;
+      }
+    #text4 h1{
+      font-size: 2.0rem;
+    }
+    /*Octava Area*/
+    #uni{
+      width: 100%;
+      height: 35rem;
+      position: relative;
+      grid-area: uni;
+      
+    }
+    #text5{
+      background-color: #1B2A4E;
+      border-radius: 5px;
+      position: absolute;
+      margin-left: 0.5rem;
+      width: 746px; 
+    }
+    #text5 h3{
+      font-size: 1.rem;
+    }
+    #text5 p{
+      font-size: 1rem;
+    } 
+    
+    /*Novena Area*/
+    .get{
+      grid-area: get;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "text6a" "cel3";
+    }
+    
+    #texto6{
+      position: absolute;
+      width: 736px;
+      border-radius: 0.5rem;
+      background-image: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
+      margin-left: .3rem;
+    }
+    #texto6a{
+      grid-area: text6a;
+      padding-bottom: 8rem;
+      padding-top: 5rem;
+      position: relative;
+    }
+    #texto6a h1{
+      font-size: 2rem;
+    }
+    #texto6a p{
+      font-size: .8rem;
+    }
+    #but4{
+      background-color: white;
+      color: black;
+      border-radius: .6rem;
+      border: solid;
+      border-color: white;
+      font-weight: 600;
+    }
+    #cel3{
+      grid-area: cel3;
+      position: relative;
+      left: 30rem;
+      top: -4rem;
+    }
+    #cel3 img{
+      height: 30rem;
+    }
+    /*Decima area*/
+    .post{
+      grid-area: post;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      }
+    
+      #post1{
+      display: flex;
+      width: 80%;
+      padding-left: 2rem;
+      padding-top: 1.1rem;
+    } 
+    .cont a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 0;
+    }
+
+    #post2{
+      display: flex;
+      width: 80%;
+      padding-left: 2rem;
+      padding-top: 1.1rem;
+    } 
+    .cont2 a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 1rem;
+    }
+    #post3{
+      display: flex;
+      width: 80%;
+      padding-left: 2rem;
+      padding-top: 1.1rem;
+    } 
+    .cont3 a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 0rem;
+    }
+    
+    #img1{
+      width: 8rem;
+      height: 8rem;
+    }
+    #texto7{
+      margin-left: 3rem;
+      padding-top: 1rem;
+      
+    }
+    
+    
+    /*Onceava Area*/
+    .about{
+      grid-area: about;
+      width: 100%;
+      height: 45rem;
+      background-color: #1B2A4E;
+      position: relative;
+      display: grid;
+      grid-template-columns:repeat(2, auto) ;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "last last"
+                            "it1 it2"
+                            "it3 it4";
+                            
+    }
+    #last{
+    grid-area: last;  
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-top: 2rem;
+    color: #38436D;
+    }
+    #redes{
+      padding-top: 0.5rem;
+    }
+    .ti-twitter, .ti-linkedin, .ti-youtube{
+      padding-left: 1rem;
+      color: white;
+    }
+    .ti-facebook{
+      color: white;
+    }
+    #it1{
+      grid-area: it1;
+      padding-left: 5rem;
+    }
+    #it1 h4{
+      font-size: 1.2rem; 
+    }
+    #it2{
+      grid-area: it2;
+      padding-left: 5rem;
+    }
+    #it2 h4{
+      font-size: 1.2rem; 
+    }
+    #it3{
+      grid-area: it3;
+      padding-left: 5rem;
+    }
+    #it3 h4{
+      font-size: 1.2rem; 
+    }
+    #it4{
+      padding-left: 5rem;
+      grid-area: it4;
+    }
+    #it4 h4{
+      font-size: 1.2rem; 
+    }
+    /*Doceava once*/
+    footer{
+      position: relative;
+      grid-area: footer;
+      width: 100%;
+      height:3rem;
+      background-color: #1B2A4E;
+      color: whitesmoke;
+      font-size: xx-small;
+      text-align: center;
+      justify-content:center ;
+    }
+    
+  }
+
+  /*C  U  A  R  T  O       B   R E A K P O I N T */
+
+
+
+  @media only screen and (min-width: 831px) and (max-width: 1124px) {
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(13, auto);
+      grid-template-areas:    "nav nav"
+                              "ppal ppal"
+                              "brands brands"
+                              "text2 text2"
+                              "cards cards"
+                              "stay stay"
+                              "icons icons" 
+                              "faq faq"
+                              "uni uni"
+                              "get get"
+                              "post post"
+                              "about about"
+                              "footer footer";
+    }
+    .menu{
+      height: 65px;
+      padding-left: 2rem;
+    }  
+    .bmenu{
+      display: inline-flex;
+    }
+    .menu_items {
+      position: fixed;
+      width: 100vw;
+      height: calc(100% - 65px);
+      background: none;
+      top: -100vh;
+      text-align: center;
+      transition: all .4s;
+      flex-direction: column;
+    }
+    .menu_items li{
+      margin: 30px 0 0 0;
+      line-height: 30px;
+    }
+    .menu_items li:hover {
+      background: none;
+    }
+    .menu_items li a {
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold; 
+    }
+    
+    
+    /*Segunda Area*/
+    .ppal{
+      grid-area: ppal;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:  "ppal1 celu"
+                            "ppal1 celu";
+    }  
+    #texto{
+      grid-area: ppal1;
+      padding-top: 3rem;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      ;
+      }
+    .ppal h1{
+      font-size: 2.5rem;
+    }
+    .ppal p{
+      font-size: .8rem;  
+    }
+    .ppal button{
+      color: white;
+      background-color: #121158;
+      width: 12rem;
+      height: 3rem;
+      padding-top: .4rem;
+      border-radius: 2rem;
+      border: solid;
+      border-color: #121158;
+      margin-top: 1rem;
+      font-weight: 800;
+    }
+    #celu{
+      grid-area: celu;
+      position: absolute;
+      top: 4rem;
+      left: 5rem;
+      height: 25rem;
+    }
+    /*tercera area*/
+    #brands{
+      grid-area: brands;  
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "b2 b3 b4"    
+                           "b5 b6 b7";    
+      position: relative;
+      height: 13rem;
+      width:  60%;
+      border-radius: 10px;
+    }
+    
+    .b2{
+      grid-area: b2;
+      
+    }
+    .b3{
+      grid-area: b3;
+    }
+    .b4{
+     grid-area: b4;
+    }
+    .b5{
+      grid-area: b5;
+    }
+    .b6{
+      grid-area: b6;
+    }
+    .b7{
+      grid-area: b7;
+    }
+    /*Tercera bis BIS///////*/
+    #text2{
+      grid-area: text2;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 10rem;
+      top: 3rem;
+     }
+    #text2 h1{
+      font-size: 2rem; 
+    }
+    #text2 p{
+      font-size: 1rem;
+    }
+
+    /*Cuarta Area*/
+    .cards{
+      grid-area: cards;
+      width: 100%;
+      height: 25rem;
+      position: relative;
+      top: 3rem;
+      overflow: hidden;  
+    }
+    
+    .container-slider {
+      width: 100%;
+      margin: auto;
+      
+      position: relative;
+    }
+    .slider{
+      display: flex;
+      width: 300%;
+      height: 300px;
+      margin-left: -100%;
+    }
+    
+    .slider__section{
+      margin-left: 0.5rem;
+      padding-left: 3rem;
+      padding-top: 2rem;
+      padding-right: 1rem;
+      width: 100%;  
+      height: 100%;
+      border-radius: 10px;
+      background-color: whitesmoke;  
+      color: rgb(165, 165, 192);
+      /*box-shadow: 0 0 0,
+                  0px 50px 0px;*/
+    }
+    .slider__section h2{
+      color: #3C3B75;
+      margin-top: 1rem;
+    }
+    .slider__section p{
+      margin-top: 1rem;
+      font-size: 11.5px;
+    }
+    #icon1{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #35BFE7;
+      border-radius: 6%;
+    }
+    #icon2{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #FA4C9A;
+      border-radius: 6%;
+    }
+    #icon3{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color:#ECBF24;
+      border-radius: 6%;
+    }
+    #icon4{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: tomato;
+      border-radius: 6%;
+    }
+    #icon5{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color: #35BFE7;
+      border-radius: 6%;
+      }
+    #icon6{
+      font-size: 3rem;
+      color: white;
+      padding: 1rem;
+      background-color:#ECBF24;
+      border-radius: 6%;
+      }
+    .slider__btn{
+      position: absolute;
+      color: red;
+      width: 40px;
+      height: 40px;
+      /*background-color: rgb(165, 165, 192, 0.7);*/
+      background-color: violet;
+      top: 85%;
+      transform: translateY(-10%);
+      text-align: center; 
+      border-radius: 50%;
+    }
+    .slider__btn:hover{
+      background-color: #fff;
+    }
+    /*.slider__btn--left{
+      left: 10px;
+      
+    }
+    .slider__btn--rigth{
+      left: 10px;
+      
+    }*/
+    
+    /*QuintaArea*/
+    .stay{
+      grid-area: stay;
+      width: 100%;
+      height: 40rem;
+      position: relative;
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:  "cel" "text3" ;
+    }
+    #cel{
+      grid-area: cel;
+      left: 0.2rem;
+      top: 8rem;
+    }
+    #cel img{
+      height: 25rem;
+    }
+
+    #text3{
+      grid-area: text3;
+      position: absolute;
+      top: -20rem;
+      left: 38rem;
+    }
+    #text3 h1{
+      font-size: 2rem;
+       
+    }
+    #text3 p{
+      font-size: 1rem;
+    }
+    #butstay button{
+      background-color: #3639AE;
+      color: white;
+      width: 200px;
+      height: 60px;
+      border-radius: .6rem;
+      border: solid;
+      border-color: #121158;
+      font-weight: 800;
+      margin-top: 2rem;
+     }
+     
+     /*sexta area*/
+    
+    #icons{
+        text-align: center;
+        position: relative;  
+        left: 4rem;
+        grid-area: icons;  
+        padding-top: 2rem;
+      }
+    .f1{
+      grid-area: f1;
+    }
+    .f2{
+      grid-area: f2;
+    }
+    .f3{
+      grid-area: f3;
+    }
+    .f4{
+      grid-area: f4;
+    }
+    
+      /*septima Area*/
+    .faq{
+      grid-area: faq;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 15rem;
+    }
+    #text4{
+      position: absolute;
+      top: 4rem;
+      left: 16rem;
+      }
+    #text4 h1{
+      font-size: 2.0rem;
+    }
+    
+    /*Octava Area*/
+    #uni{
+      width: 100%;
+      height: 35rem;
+      position: relative;
+      grid-area: uni;
+      
+    }
+    #text5{
+      background-color: #1B2A4E;
+      border-radius: 5px;
+      position: absolute;
+      margin-left: 0.5rem;
+      width: 890px; 
+    }
+    #text5 h3{
+      font-size: 1.rem;
+    }
+    #text5 p{
+      font-size: 1rem;
+    } 
+    
+    /*Novena Area*/
+    .get{
+      grid-area: get;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "text6a" "cel3";
+    }
+    
+    #texto6{
+      position: absolute;
+      width: 896px;
+      border-radius: 0.5rem;
+      background-image: linear-gradient(90deg, #1c17a1, #1173c7, #06c9ea);
+      margin-left: .3rem;
+    }
+    #texto6a{
+      grid-area: text6a;
+      padding-bottom: 8rem;
+      padding-top: 5rem;
+      position: relative;
+    }
+    #texto6a h1{
+      font-size: 2rem;
+    }
+    #texto6a p{
+      font-size: 1rem;
+    }
+    #but4{
+      background-color: white;
+      color: black;
+      border-radius: .6rem;
+      border: solid;
+      border-color: white;
+      font-weight: 600;
+    }
+    #cel3{
+      grid-area: cel3;
+      position: relative;
+      left: 36rem;
+      top: -4rem;
+    }
+    #cel3 img{
+      height: 30rem;
+    }
+    /*Decima area*/
+    .post{
+      grid-area: post;
+      width: 100%;
+      height: 30rem;
+      position: relative;
+      }
+    
+      #post1{
+      display: flex;
+      width: 80%;
+      padding-left: 3rem;
+      padding-top: 1.1rem;
+    } 
+    .cont a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 1rem;
+    }
+
+    #post2{
+      display: flex;
+      width: 80%;
+      padding-left: 3rem;
+      padding-top: 1.1rem;
+    } 
+    .cont2 a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 1rem;
+    }
+    #post3{
+      display: flex;
+      width: 80%;
+      padding-left: 3rem;
+      padding-top: 1.1rem;
+    } 
+    .cont3 a{
+      text-decoration: underline;
+      color: white;
+      padding-left: 0rem;
+    }
+    
+    #img1{
+      width: 8rem;
+      height: 8rem;
+    }
+    #texto7{
+      margin-left: 3rem;
+      padding-top: 1rem;
+      
+    }
+    
+    
+    /*Onceava Area*/
+    .about{
+      grid-area: about;
+      width: 100%;
+      height: 45rem;
+      background-color: #1B2A4E;
+      position: relative;
+      display: grid;
+      grid-template-columns:repeat(2, auto) ;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "last last"
+                            "it1 it2"
+                            "it3 it4";
+                            
+    }
+    #last{
+    grid-area: last;  
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-top: 2rem;
+    color: #38436D;
+    }
+    #redes{
+      padding-top: 0.5rem;
+    }
+    .ti-twitter, .ti-linkedin, .ti-youtube{
+      padding-left: 1rem;
+      color: white;
+    }
+    .ti-facebook{
+      color: white;
+    }
+    #it1{
+      grid-area: it1;
+      padding-left: 5rem;
+    }
+    #it1 h4{
+      font-size: 1.2rem; 
+    }
+    #it2{
+      grid-area: it2;
+      padding-left: 5rem;
+    }
+    #it2 h4{
+      font-size: 1.2rem; 
+    }
+    #it3{
+      grid-area: it3;
+      padding-left: 5rem;
+    }
+    #it3 h4{
+      font-size: 1.2rem; 
+    }
+    #it4{
+      padding-left: 5rem;
+      grid-area: it4;
+    }
+    #it4 h4{
+      font-size: 1.2rem; 
+    }
+    /*Doceava once*/
+    footer{
+      position: relative;
+      grid-area: footer;
+      width: 100%;
+      height:3rem;
+      background-color: #1B2A4E;
+      color: whitesmoke;
+      font-size: xx-small;
+      text-align: center;
+      justify-content:center ;
+    }
+    
+  }

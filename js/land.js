@@ -45,10 +45,11 @@ setInterval(function(){
 
 addEventListener('DOMContentloaded', () => {
     const bmenu = document.querySelector('.bmenu')
-    if (bmenu){
+    if (bmenu) {
         bmenu.addEventListener('click', () => {
             const menu_items = document.querySelector('.menu_items')
             menu_items.classList.toggle('show')
         })
     }
 })
+
