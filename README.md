@@ -54,8 +54,9 @@ El Covid-19 es una realidad que afrontamos en este siglo, y a pesar de ser tan m
 
 ![Res](https://user-images.githubusercontent.com/97111500/152899034-1ca04221-0f1a-4eca-b3af-f75f123686ae.png)
 
-<p>Es funcional en todos los tamaños un slider o ¨carrusel¨ el cual se encuentra codificado en JavaSript. 
-![Res](https://user-images.githubusercontent.com/97111500/152899175-42edcab7-574f-49db-b221-93f62a497a38.png) </p>
+<p>Para todos los tamaños se implemento un slider o ¨carrusel¨ el cual se encuentra codificado en JavaScript.</p> 
+
+![Carousel](https://user-images.githubusercontent.com/97111500/152905031-3056894f-0097-4d05-b9bf-28e8519e37e4.png)
 
 <p>Las cifras se obtienen desde https://disease.sh/ mediante el consumo de Api con codigo Javascript, logrando una interfaz amigable que proporciona un contenido amplio y actualizado. </p>
 
