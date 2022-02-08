@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./themify-icons/themify-icons.css" rel="stylesheet">
 	
-	<title>TRACKER 2</title>
+	<title>TRACKER 5 PRUEBA</title>
 </head>
 
 <body class="grid-container">
@@ -16,19 +16,19 @@
 	<div id="imgCorona">
 	<a href="index.html" class="navbar"><img src="./images/coronavirus.png" id="imageCorona"></a>
 	</div>			
- 	 <nav class="navbar" id="nav">
-	<a href="tracker2.html" class="navbar active" ><i class="ti-pie-chart"></i></a>
-	<a href="tracker3.html" class="navbar"><i class="ti-view-list"></i></a>
-	<a href="tracker4.html" class="navbar"><i class="ti-view-grid"></i></a>
-	<a href="tracker5.html" class="navbar"><i class="ti-layout-tab"></i></a>
-	<a href="#" class="navbar"><i class="ti-layers-alt"></i></a>
-	<a href="tracker6.html" class="navbar"><i class="ti-stats-up"></i></a>
-	<a href="tracker7.html" class="navbar"><i class="ti-world"></i></a>
-	<a href="#" class="navbar"><i class="ti-comment"></i></a>
-	<a href="#" class="navbar"><i class="ti-flickr-alt" id="puntos"></i></a>
-
+	<nav class="navbar" id="nav">
+		<a href="tracker2.html" class="navbar active" ><i class="ti-pie-chart"></i></a>
+		<a href="tracker3.html" class="navbar"><i class="ti-view-list"></i></a>
+		<a href="tracker4.html" class="navbar"><i class="ti-view-grid"></i></a>
+		<a href="tracker5.html" class="navbar"><i class="ti-layout-tab"></i></a>
+		<a href="#" class="navbar"><i class="ti-layers-alt"></i></a>
+		<a href="#" class="navbar"><i class="ti-stats-up"></i></a>
+		<a href="#" class="navbar"><i class="ti-world"></i></a>
+		<a href="#" class="navbar"><i class="ti-comment"></i></a>
+		<a href="#" class="navbar"><i class="ti-flickr-alt" id="puntos"></i></a>
 	
-  </nav>
+		
+	 </nav>
 </div>
   <aside class="sidebar" >
 	<h2>COVID-19 Tracker</h2>
@@ -61,68 +61,31 @@
   <section class="main">
 
     <div id="parteSuperiorTrack5">Covid-19 Country Wise - Tabs</div>
-	  <div id="parteSuperior">
+	  <div id="parteSuperior1">
 	
 		<select name="countries" id="countries">
 
 		</select>
-		  <p id="date">Updated: February 1, 2022</p>
+		<p id="date" style="color: white;">Updated: February 1, 2022</p>
 	  </div>
-	  		<div id="parteMedia">
-	  			<div id="parteMediaIzqTracker5">
+	  
+	  		<div id=" parteMedia1" class="parteMedia1" >
+				<button class="btnsTracker5 active" id="usaBtn"><img src="https://disease.sh/assets/img/flags/us.png" style="width: 22px; height:22px; border-radius:50%"> USA</button>
+				<button class="btnsTracker5" id="spainBtn"><img src="https://disease.sh/assets/img/flags/es.png" style="width: 22px; height:22px; border-radius:50%"> Spain</button>
+				<button class="btnsTracker5" id="italyBtn"><img src="https://disease.sh/assets/img/flags/it.png" style="width: 22px; height:22px; border-radius:50%"> Italy</button>
+				<button class="btnsTracker5" id="indiaBtn"><img src="https://disease.sh/assets/img/flags/in.png" style="width: 22px; height:22px; border-radius:50%"> India</button>
+				<button class="btnsTracker5" id="ukBtn"><img src="https://disease.sh/assets/img/flags/gb.png" style="width: 22px; height:22px; border-radius:50%"> United Kingdom</button>
+				<button class="btnsTracker5" id="franceBtn"><img src="https://disease.sh/assets/img/flags/fr.png" style="width: 22px; height:22px; border-radius:50%"> France</button>
+				<button class="btnsTracker5" id="germanyBtn"><img src="https://disease.sh/assets/img/flags/de.png" style="width: 22px; height:22px; border-radius:50%"> Germany</button>
+				<button class="btnsTracker5" id="russiaBtn"><img src="https://disease.sh/assets/img/flags/ru.png" style="width: 22px; height:22px; border-radius:50%"> Russia</button>
+				<button class="btnsTracker5" id="turkeyBtn"><img src="https://disease.sh/assets/img/flags/tr.png" style="width: 22px; height:22px; border-radius:50%"> Turkey</button>
 					
-		
-					<div id="chd1">
-						<h3>Total Cases</h3>
-						<hr>
-						<p id="cases"></p>
-						<img src="./images/icons/covid-defult.svg">
-					</div>	
-					<div id="chd2">
-						<h3>Total Deaths</h3>
-						<hr>
-						<p id="deaths"></p>
-						<img src="./images/icons/covid-red.svg">
-					</div>
-
-					<div id="chd3">
-						<h3>Total Recovered</h3>
-						<hr>
-						<p id="recovered"></p>
-						<img src="./images/icons/covid-green.svg">
-					</div>
-
-					<div id="chd4">
-						<h3>Total Active</h3>
-						<hr>
-						<p id="active"></p>
-						<img src="./images/icons/covid-blue.svg">
-					</div>
-
-					<div id="chd5">
-						<h3>New Cases</h3>
-						<hr>
-						<p id="todayCases"></p>
-						<img src="./images/icons/covid-orange.svg">
-					</div>
-
-					<div id="chd6">
-						<h3>Today Deaths</h3>
-						<hr>
-						<p id="todayDeaths"></p>
-						<div>
-						<img src="./images/icons/covid-redark.svg">
-					</div>
-				</div>	
-
-
-
-	  			</div>
-
-
-
+			</div>
+			<div id="parteMediaIzqTracker5"></div>	
+			
   </section>
 
-<script type="text/javascript"  src="js/tracker2.js"></script>
+	<script type="text/javascript"  src="js/tracker2.js"></script>
+<script type="text/javascript"  src="js/tracker5.js"></script>
 </body>
 </html>

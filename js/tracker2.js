@@ -1,4 +1,4 @@
-//CODIGO PARA PONER LA FECHA ACTUAL
+//CODIGO PARA PONER LA FECHA ACTUAL TRACKER2
 
 
 date = new Date();
@@ -201,11 +201,10 @@ fetch('https://disease.sh/v3/covid-19/countries?sort=cases')
     countries2.innerHTML +=
 
                       `<div>
-                        <img src="${dat.countryInfo.flag}" + style="width: 50px; margin-left:-8%">
+                        <img src="${dat.countryInfo.flag}" >
                         <h5>${dat.country}</h5>
                         <p>${dat.cases}</p>
-                      </div>
-                      `
+                      </div>                      `
 
   });
 });
