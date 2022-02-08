@@ -9,6 +9,7 @@ datas.map(dat => {
 columnas1.innerHTML +=
 
  `<div>
+
     <img src="${dat.countryInfo.flag}" + style="width: 26px; height: 26px">
     <h6>${dat.country}</h6>  
     <p>${dat.cases}</p>
