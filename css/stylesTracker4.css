@@ -1,0 +1,251 @@
+.grid-container > * {  
+  justify-content: center;
+  align-items: center;
+}
+
+.headermain4{
+  box-sizing: border-box;
+  color: #3639AE;
+  position: relative;
+  margin-bottom: 0;
+  font-weight: 600;
+  background-color: #ffffff;
+  
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 40px;
+  width: 935px;
+
+}
+
+.headermain4 h1{
+  position: absolute;
+  top: 44px;
+  }
+
+/*STYLE TABLE *****************************************************/  
+/*ANIMATION TABLE *****************************************************/  
+
+
+#columnas1 div:hover, #columnas2 div:hover, #columnas3 div:hover, #columnas4 div:hover, 
+#columnas5 div:hover, #columnas6 div:hover{
+ -webkit-transform:scale(1.19);
+-moz-transform:scale(1.19);
+-ms-transform:scale(1.19);
+-o-transform:scale(1.19);
+transform:scale(1.19);
+-webkit-transition:all 0.3s ease; /* Safari y Chrome */
+-moz-transition:all 0.3s ease; /* Firefox */
+-o-transition:all 0.3s ease; /* IE 9 */
+-ms-transition:all 0.3s ease; /* Opera */
+border-radius: 3%;
+}
+
+/*STYLE TABLE *****************************************************/ 
+#main4 {
+  position: relative;
+  width: auto;
+  grid-area: main4;
+  background-color: #ffffff;
+  width: 550px;
+  display: block;
+  top: -750px;
+  left: 0%;
+  
+}
+.tablacolumnas{
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  top: 154px;
+  right: 0%;
+
+}
+
+#columnas1 div, #columnas2 div, #columnas3 div, #columnas4 div, #columnas5 div, #columnas6 div {
+  
+  width: 125px;
+  padding: 40px 8px 0 0px; 
+  padding-left: 10%;
+  margin: 20px 15px;
+  height: 3rem;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  border-radius: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#columnas1 img{
+border-radius: 50%;
+position: absolute;
+top: 20%;
+left: 30%; 
+margin-left: -20%;
+
+}
+#columnas1 h6{
+background-color: #ffffff;
+width: 50%;
+position: absolute;
+top: 10%;
+left: 35%; 
+
+
+}
+
+#columnas1 p {
+  font-size: 1rem;
+ position: absolute;
+ background-color: #ffffff;
+ top: 50%;
+  left: 35%; 
+}
+
+
+
+
+#columnas2 img{
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 30%; 
+  margin-left: -20%;
+  }
+  #columnas2 h6{
+  background-color: #ffffff;
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 35%; 
+  
+  }
+  #columnas2 p {
+    font-size: 1rem;
+   position: absolute;
+   background-color: #ffffff;
+   top: 50%;
+    left: 35%;
+  }
+ 
+
+  #columnas3 img{
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 30%; 
+    margin-left: -20%;
+    }
+    #columnas3 h6{
+    background-color: #ffffff;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 35%; 
+    
+    }
+    #columnas3 p {
+      font-size: 1rem;
+     position: absolute;
+     background-color: #ffffff;
+     top: 50%;
+      left: 35%;
+    }
+   
+
+    #columnas4 img{
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: 30%; 
+      margin-left: -20%;
+      }
+      #columnas4 h6{
+      background-color: #ffffff;
+      width: 50%;
+      position: absolute;
+      top: 10%;
+      left: 35%; 
+      
+      }
+      #columnas4 p {
+        font-size: 1rem;
+       position: absolute;
+       background-color: #ffffff;
+       top: 50%;
+        left: 35%;
+      }
+
+      #columnas5 img{
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        left: 30%; 
+        margin-left: -20%;
+        }
+        #columnas5 h6{
+        background-color: #ffffff;
+        width: 50%;
+        position: absolute;
+        top: 10%;
+        left: 35%; 
+        
+        }
+        #columnas5 p {
+          font-size: 1rem;
+         position: absolute;
+         background-color: #ffffff;
+         top: 50%;
+          left: 35%;
+        }
+
+
+        #columnas6 img{
+          border-radius: 50%;
+          position: absolute;
+          top: 20%;
+          left: 30%; 
+          margin-left: -20%;
+          }
+          #columnas6 h6{
+          background-color: #ffffff;
+          width: 50%;
+          position: absolute;
+          top: 10%;
+          left: 35%; 
+          
+          }
+          #columnas6 p {
+            font-size: 1rem;
+           position: absolute;
+           background-color: #ffffff;
+           top: 50%;
+            left: 35%;
+          }
+
+/*END STYLE TABLE ********************/
+
+
+
+
+  @media (min-width: 1280px) {
+  
+    #main4 {
+  
+      position: relative;
+      grid-area: main4;
+      background-color: #ffffff;
+      width: 100%;
+      display: block;
+      
+    }
+
+   
+    }
+
+
