@@ -41,6 +41,21 @@ body {
   background-color: #f5f5f5;
 }
 
+
+#div1{
+  overflow: scroll;
+  width: 850px;
+  height: 450px;
+}
+#div1 td, th{
+  border:1px solid grey;
+  width:auto;
+  height: 45px;
+  text-align: center;
+}
+
+
+
 .grid-container {
   display: grid;
   grid-template:
@@ -59,4 +74,52 @@ body {
   }
 
 }
+
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template:
+      "navbar  main"   10fr /
+     80px     auto;
+  }
+  .sidebar{
+    display: none;
+  }
+  .main{
+    width: 100%;
+  }
+
+  }
+
+  @media (min-width: 1199px) {
+      .sidebar{
+        display: none;
+      }
+      .grid-container {
+        grid-template:
+          "navbar  main"   10fr /
+         80px     auto;
+      }
+    }
+
+  @media (min-width: 1200px) {
+    .grid-container {
+      grid-template:
+        "navbar sidebar main"   10fr /
+       80px    1.9fr   6.7fr;
+    }
+    .sidebar{
+      display: block;
+    }
+  
+    }
+  
+  @media (min-width: 1366px) {
+    
+    #puntos{
+         top: 620px;
+      }
+    }
+
+
 

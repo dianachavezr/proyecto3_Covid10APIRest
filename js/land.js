@@ -43,6 +43,8 @@ setInterval(function(){
 }, 3500)
 /*src="https://www.youtube.com/embed/WI0aCIEYXvw"*/
 
+
+
 addEventListener('DOMContentloaded', () => {
     const bmenu = document.querySelector('.bmenu')
     if (bmenu) {
