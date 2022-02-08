@@ -34,7 +34,7 @@ El Covid-19 es una realidad que afrontamos en este siglo, y a pesar de ser tan m
     🔧 Total muertes.
     🔧 Total de recuperados.
     🔧 Total de casos activos. 
-<p>La ejecucion del proyecto se planteo mediante un Backlog elaborado en Trello:</p>
+<p>La ejecucion del proyecto se planteo mediante un Product Backlog elaborado en Trello https://trello.com/b/e61528n6/impacto-covid-19-en-el-mundo:</p>
 
 ![Backlog](https://user-images.githubusercontent.com/97111500/152902164-76482bbb-c1ae-4faf-8e9f-de3beb114761.png)
 
@@ -65,4 +65,16 @@ El Covid-19 es una realidad que afrontamos en este siglo, y a pesar de ser tan m
 ![Datos Globales](https://user-images.githubusercontent.com/97111500/152903152-97324114-7045-4932-b0fd-242643545453.png)
 
 ![Mapa Paises](https://user-images.githubusercontent.com/97111500/152903163-6a1f0e73-ae33-4e0f-bcb9-47ddab8e1ad1.png)
+
+<p>Se consultaron fuentes de informacion disponibles en:</br>
+developer.mozilla.org</br>
+stackoverflow.com</br>
+https://www.youtube.com/embed/WI0aCIEYXvw
+https://www.youtube.com/watch?v=G-j5SI7Qitk 
+https://www.youtube.com/watch?v=T4t00Hd3qZc
+https://www.youtube.com/watch?v=THZyM2z8s-o&t=4939s
+https://www.youtube.com/watch?v=7f2HNadULOs
+</p> 
+    
+
 
